@@ -1,0 +1,4 @@
+requests==2.32.3
+jsonschema==4.23.0
+openai==1.35.14
+click==8.1.7

@@ -1,0 +1,8 @@
+Agent Alex: Thanks for calling DispatchOps. Who am I speaking with today?
+Caller Jordan: Hi Alex, this is Jordan from Northwind. Our checkout API has been timing out since about 10:15 AM Eastern.
+Agent Alex: Sorry to hear that. Is anyone currently impacted?
+Caller Jordan: Yes, production customers are seeing intermittent failures and the incident is already posted to the status page.
+Agent Alex: Understood. Any recent changes?
+Caller Jordan: We deployed a config change to the payment gateway last night. Rolling back now seems to stabilize things.
+Agent Alex: Great. We'll keep monitoring. Anything else you need?
+Caller Jordan: Please send a short summary and next steps. Thank you.

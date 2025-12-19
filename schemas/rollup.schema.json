@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DispatchKernel Rollup",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["summary", "incidents", "next_steps", "status"],
+  "properties": {
+    "summary": { "type": ["string", "null"] },
+    "incidents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "description", "severity"],
+        "properties": {
+          "type": { "type": "string" },
+          "description": { "type": "string" },
+          "severity": { "type": "string", "enum": ["low", "medium", "high"] }
+        }
+      }
+    },
+    "next_steps": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "status": { "type": ["string", "null"] }
+  }
+}
